@@ -21,3 +21,7 @@ def about():
 @app.route("/volunteers.html")
 def volunteers():
     return render_template('volunteers.html')
+
+@app.route("/gallery.html")
+def gallery():
+    return render_template('gallery.html')
