@@ -1,6 +1,13 @@
+/* Global and Navigation Bar */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 body{
-    background-color: #E91E63;
+    background: rgb(58,161,180);
+    background: linear-gradient(90deg, rgba(58,161,180,1) 0%, rgba(29,135,253,1) 50%, rgba(69,252,167,1) 100%);
 }
 
 .nav_items{
@@ -8,24 +15,26 @@ body{
     margin: 5px;
     padding: 0;
     overflow: hidden;
-    background-color:#636161;
+    background: rgb(58,161,180);
+    background: linear-gradient(90deg, rgba(58,161,180,1) 0%, rgba(251,29,253,1) 50%, rgba(69,252,167,1) 100%);
     
 }
 .nav_items li {
     display: inline;
     float: right;
     
+    
 }
 
 .nav_items ul{
     position: fixed;
     top: 0;
-    width: 100%;
+    
 }
 
 .nav_items li a{
         
-        color: white;
+        color: black;
         text-align: center;
         padding: 14px 16px;
         
@@ -40,60 +49,62 @@ body{
     height: 30px;
 }
 
-.home{
-    
-    background-size: cover;
-    margin: 10px;
-    
+
+
+
+/* ----------Homepage------------ */
+.home_container{
+    position: relative;
+    text-align: center;
+    color: #F41306;
+    }
+
+.home_container_img{
+    width: 100%;
 }
 
-.home_bg{
-    display: block;
+.home_head{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 75px;
+}
+
+.home_subhead{
+    font-size: 50px;
+    border:3px; 
+    border-style:solid; 
+    border-color:cyan;
 }
 
 .home_heading{
-    
-    position: absolute;
-    margin-bottom: 10%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 55px;
+    display: none;
 }
 
-.home_subheading{
-    margin-top: 10%;
-    position: absolute;
-    top: 70%;
-    font-size: 25px;
-    border:3px; 
-    border-style:solid; 
-    border-color:grey;
-    
 
-}
 
-.home_img_container{
-    position: relative;
-    text-align: center;
-    color: white;
-}
+
+/* -----------Services----------- */
+
+
+
 
 .services{
     background-image: url(../static/assets/services.jpg);
     background-size: cover;
-    
-    
 }
 
 .services_heading{
     text-align: center;
     font-size: 55px;
+    color: #F41306;
 }
 
 .services_subheading{
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
+    color: #F41306;
 }
 
 .services_icon{
@@ -104,7 +115,8 @@ body{
 
 
 .services_list{
-    color: aliceblue;
+    color: #000000;
+    
     
 }
 
@@ -115,20 +127,15 @@ body{
 }
 
 .service_card_head{
-    margin-left: 50%;
+    
     padding-right: 20%;
-    font-size: 30px;
+    font-size: 40px;
     
-    text-align: center;
-    
-
 }
 
 .services_card_body{
-    text-align: center;
-    font-size: 20px;
-    
-    
+    text-align: left;
+    font-size: 30px;
     
 }
 
@@ -141,22 +148,25 @@ body{
     border:3px; 
     border-style:solid; 
     border-color:cyan;
-    background-color: #8CAAB9;
-    
-    
-    
-    
-
+    font-weight: 600;
+    background: rgb(58,161,180);
+    background: linear-gradient(90deg, rgba(58,161,180,1) 0%, rgba(251,29,253,1) 50%, rgba(69,252,167,1) 100%);
 }
-
 .services_list_items:hover{
-    background-color: #FF8A65;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    
 }
+
+
+
 
 .services_head_inline{
     display: inline;
+    text-align: left;
 }
 
+/* ----------about----------------- */
 .about{
     background-image: url(../static/assets/about.jpg);
     background-size: cover;
@@ -166,32 +176,49 @@ body{
 .about_head{
     font-size: 55px;
     text-align: center;
+    color: #F41306;
     
 }
 
 .about_body{
-    text-align: center;
-    
+    text-align: left;
+    color: #F41306;
+    font-size: 25px;
+    margin: 5px;
+    font-weight: 400;
 }
 .about_body_sub{
     font-size: 30px;
+    color: #000000;
     border:3px; 
     border-style:solid; 
     border-color:cyan;
     background-color: #8CAAB9;
+    margin: 20px;
+    
+}
+
+.about_body_sub:hover{
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
 }
 
 .about_body_sub_body{
     font-size: 20px;
+    text-align: left;
+
 }
 
+/* ------------volunteers------------ */
 .vol_head{
     font-size: 55px;
     text-align: center;
+    color: #F41306;
 }
 
 .vol_card_image{
     width: 200px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -199,25 +226,248 @@ body{
 }
 
 .vol_card_body_name{
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+
 }
 
 .vol_card_body_about{
-    font-size: 15px;
-    text-align: center;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 10px;
 }
 
+.vol_card{
+    padding-left: 10px;
+    padding-right: 10px;
+    border:3px; 
+    border-style:solid; 
+    border-color:cyan;
+    
+    margin-bottom: 10px;
+}
+
+.vol_card:hover{
+    
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+
+/* ---------gallery------ */
 .gallery_head{
     text-align: center;
     font-size: 55px;
+    color: #F41306;
+    margin-bottom: 10px;
 }
 
 .gallery_image{
-    width: 40%;
-    height: 40%;
+    width: 60%;
+    height: 50%;
     margin-left: auto;
     margin-right: auto;
     display: block;
+    margin-bottom: 20px;
+    filter: grayscale();
 }
 
+.gallery_image:hover{
+    filter: none;
+}
+
+/* ----------contact------ */
+.contact_form_head{
+    text-align: center;
+    font-size: 40px;
+    margin: 10px;
+    color: #F41306;
+}
+
+.contact_form div{
+    font-size: 20px;
+    margin: 20px;
+}
+
+.contact_form input{
+    width: auto;
+    height: 30px;
+}
+
+.contact_form button{
+    width: auto;
+    height: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+form{
+    text-align: center;
+    border:3px; 
+    border-style:solid; 
+    border-color:cyan;
+}
+
+.contact_socials_head{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 16px;
+    color: #F41306;
+}
+
+.contact_socials_icons{
+    text-align: center;
+    
+}
+
+.contact_socials_icons img{
+    width: 50px;
+    margin-right: 4px;
+    margin-left: 4px;
+}
+
+/* ----------redirect------- */
+.redirect{
+    text-align: center;
+    
+}
+
+.redirect_message{
+    font-size: 55px;
+    color: #F41306;
+    text-align: center;
+}
+.redirect a img{
+    width: 50%;
+}
+
+/* ---------------Mobile Optimization---------------- */
+@media only screen and (max-width: 700px){
+    .home_container img{
+        width: 100%;
+        
+        margin-top: 10%;
+        
+    }
+
+    
+
+    .home_head{
+        display: none;
+    }
+
+    .home_heading{
+        display: block;
+        width: 100%;
+        position: absolute;
+        text-align: center ;
+        font-size: xx-large;
+        margin-top: 10%;
+        color: #F41306;
+        border:3px; 
+        border-style:solid; 
+        border-color:cyan;
+        background: #8CAAB9;
+
+    }
+
+    .services_heading{
+        font-size: xx-large;
+    }
+
+    .service_card_head{
+        font-size: xx-large;
+    }
+
+    .services_card_body{
+        font-size: x-large;
+        
+    }
+
+    .about_head{
+        font-size: xx-large;
+    }
+
+    .about_body{
+        font-size: x-large;
+        
+        color: rgb(255, 158, 13);
+        font-weight: bold;
+    }
+
+    .vol_head{
+        font-size: xx-large;
+    }
+
+    .vol_card_body_name{
+        font-size: x-large;
+    }
+
+    .vol_card_body_about{
+        font-size: large;
+        
+    }
+
+    .gallery_head{
+        font-size: xx-large;
+    }
+
+    .gallery_image{
+        width: 80%;
+        height: 80%;
+        filter: none;
+    }
+
+    .contact_form_head{
+        font-size: xx-large;
+    }
+
+    .contact_socials_head{
+        font-size: xx-large;
+    }
+
+    .redirect_message{
+        font-size: xx-large;
+        color: #F41306;
+        text-align: center;
+    }
+
+}
+
+
+/* ------------Tablet Optimization------------------------- */
+
+@media only screen and (max-width: 1000px) and (min-width: 700px){
+    .home_container img{
+        width: 700px;
+    }
+
+    .home_head{
+        display: none;
+    }
+
+    .home_heading{
+        display: block;
+        display: block;
+        width: 100%;
+        position: absolute;
+        text-align: center ;
+        font-size: xx-large;
+        margin-top: 5%;
+        color: #F41306;
+        border:3px; 
+        border-style:solid; 
+        border-color:cyan;
+    }
+
+    .gallery_image{
+        width: 70%;
+        height: 70%;
+        filter: none;
+    }
+
+
+
+}
