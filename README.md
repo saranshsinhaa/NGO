@@ -1,6 +1,6 @@
 A Basic website developed using HTML, CSS and Python.
 
-The Microframework FLASK was used to serve the FrontEnd.
+The Microframework FLASK is used to serve the FrontEnd.
 
 This website was deployed using Pythonanywhere.com
 
